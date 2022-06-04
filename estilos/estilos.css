@@ -1,58 +1,93 @@
-root {
-    --fuenteHeading: 'PT Sans', sans-serif;
-    --fuenteParrafos: 'Open Sans', sans-serif;
+:root {
+  --fuenteHeading: "PT Sans", sans-serif;
+  --fuenteParrafos: "Open Sans", sans-serif;
 
-    --primario: #784d3c;
-    --blanco: #fff;
-    --negro: #000; 
+  --primario: #784d3c;
+  --blanco: #fff;
+  --negro: #000;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
-*,*:before, *:after{
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 body {
-    font-family: var(--fuenteParrafos);
-    font-size: 1.6rem;
-    line-height: 2;
+  font-family: var(--fuenteParrafos);
+  font-size: 1.6rem;
+  line-height: 2;
 }
 /** Globales **/
 .contenedor {
-    max-width: 120rem;
-    width: 90%;
-    margin: 0 auto;
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-h1,h2,h3,h4{
-    font-family: var(--fuenteHeading);
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--fuenteHeading);
 }
-h1{
-    font-size: 4.8rem;
+h1 {
+  font-size: 4.8rem;
 }
-h2{
-    font-size: 4rem;
+h2 {
+  font-size: 4rem;
 }
-h3{
-    font-size: 3.2rem;
+h3 {
+  font-size: 3.2rem;
 }
-h4{
-    font-size: 2.8rem;
+h4 {
+  font-size: 2.8rem;
 }
-img{
-    max-width: 100%;
+img {
+  max-width: 100%;
 }
 /**Utilidades**/
-.no-margin{
-    margin: 0;
+.no-margin {
+  margin: 0;
 }
-.no-pading{
-    padding: 0;
+.no-pading {
+  padding: 0;
 }
-.centrar-texto{
-    text-align: center;
+.centrar-texto {
+  text-align: center;
+}
+/**Header**/
+.header {
+  background-image: url(../imagenes/banner.jpg);
+  height: 60rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.header_texto {
+  text-align: center;
+  color: var(--blanco);
+  margin-top: 5rem;
+}
+@media (max-width: 768px) {
+  .barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.logo{
+  color: var(--blanco);
+  margin: ;
+}
+.logo_nombre{
+ font-weight: 400;
+}
+.logo_bold{
+ font-weight: 700;
 }
