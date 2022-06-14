@@ -253,6 +253,9 @@ curso__label{
   width: 95%;
   padding: 5rem;
   border: solid 2px var(--negro);
+  -webkit-box-shadow: 28px -14px 22px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 28px -14px 22px 3px rgba(0,0,0,0.75);
+   box-shadow: 28px -14px 22px 3px rgba(0,0,0,0.75);
 }
 .campo {
   display: flex;
