@@ -5,10 +5,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Prefetch -->
+    <link rel="prefetch" href="nosotros.html" as="document">
+
+    <!--Preload-->
+    <link rel="preload" href="estilos/normalize.css" as="style">
     <link rel="stylesheet" href="estilos/normalize.css" />
-    <link rel="stylesheet" href="estilos/estilos.css" />
+
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        crossorigin="crossorigin" as="font">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
-        rel="stylesheet" />
+        rel="stylesheet">
+
+    <link rel="preload" href="estilos/estilos.css" as="style">
+    <link rel="stylesheet" href="estilos/estilos.css" />
+
     <title>cafe</title>
 </head>
 
@@ -41,7 +54,10 @@
 
             <article class="entrada">
                 <div class="entrada_imagen">
-                    <img loading="lazy" src="imagenes/blog1.jpg" alt="Imagen blog">
+                    <picture>
+                        <source srcset="imagenes/blog1.webp" alt="image/webp">
+                        <img loading="lazy" src="imagenes/blog1.jpg" alt="Imagen blog">
+                    </picture>
                 </div>
                 <div class="entrada_contenido">
                     <h4 class="no-margin">Tipos de Granos de Cafe</h4>
@@ -55,7 +71,10 @@
 
             <article class="entrada">
                 <div class="entrada_imagen">
-                    <img loading="lazy" src="imagenes/blog2.jpg" alt="Imagen blog 2">
+                    <picture>
+                        <source srcset="imagenes/blog2.webp" alt="image/webp">
+                        <img loading="lazy" src="imagenes/blog2.jpg" alt="Imagen blog">
+                    </picture>
                 </div>
                 <div class="entrada_contenido">
                     <h4 class="no-margin">3 Deliciosas Recetas de cafe</h4>
@@ -68,7 +87,10 @@
             </article>
             <article class="entrada">
                 <div class="entrada_imagen">
-                    <img loading="lazy" src="imagenes/blog3.jpg" alt="Imagen blog 3">
+                    <picture>
+                        <source srcset="imagenes/blog3.webp" alt="image/webp">
+                        <img loading="lazy" src="imagenes/blog3.jpg" alt="Imagen blog">
+                    </picture>
                 </div>
                 <div class="entrada_contenido">
                     <h4 class="no-margin">Beneficios del Cafe</h4>
@@ -122,6 +144,9 @@
                     <a href="cursos.html" class="navegacion__enlace">Cursos</a>
                     <a href="contacto.html" class="navegacion__enlace">Contacto</a>
                 </nav>
+            </div>
+            <div class=" by centrar-texto">
+                <p>Todos los derechos reservados By Salvador Enriquez D. 2022</p>
             </div>
         </div>
     </footer>

@@ -201,6 +201,10 @@ img {
   padding-bottom: 3rem;
   margin-top: 4rem;
 }
+.by{
+  color: var(--blanco);
+  text-transform: uppercase;
+}
 /*SOBRE NOSOTROS*/
 
 @media (min-width: 768px){
